@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: #f9fafb;
+    color: #111827;
+}
+
+.sidebar {
+    position: relative;
+    width: 40%;
+    min-width: 300px;
+    min-height: 100vh;
+    background-image: url(/assets/kevin-charit-Fndo2egrfdI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* .sidebar-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+} */
+
+.logo-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    padding: 32px 48px;
+
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+}
+
+.odin-logo {
+    width: 72px;
+    height: 72px;
+    /* filter: invert(1); */
+    flex-shrink: 0;
+}
+
+.logo-text {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.photo-credit {
+    position: absolute;
+    z-index: 1;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.photo-credit a {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 72px;
+    gap: 36px;
+}
+
+.form-intro p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    max-width: 460px;
+    line-height: 1.6;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px 44px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 560px;
+}
+
+.form-card h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #111827;
+}
