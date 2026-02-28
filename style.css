@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
 *,
 *::before,
 *::after {
@@ -8,14 +13,26 @@
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    font-family: sans-serif;
     background: #f9fafb;
-    color: #111827;
+}
+
+a {
+    color: #332a19;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .sidebar {
     position: relative;
-    width: 40%;
+    width: 30%;
     min-width: 300px;
     min-height: 100vh;
     background-image: url(/assets/kevin-charit-Fndo2egrfdI-unsplash.jpg);
@@ -28,36 +45,26 @@ body {
     align-items: flex-start;
 }
 
-/* .sidebar-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 0;
-} */
-
 .logo-block {
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
     width: 100%;
-    padding: 32px 48px;
-
+    padding: 10px 48px;
     background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(2px);
 }
 
 .odin-logo {
-    width: 72px;
-    height: 72px;
-    /* filter: invert(1); */
+    width: 100px;
+    height: 130px;
     flex-shrink: 0;
 }
 
 .logo-text {
-    font-size: 2.4rem;
+    font-family: Norse-Bold;
+    font-size: 5.5rem;
     font-weight: 800;
     color: #ffffff;
     letter-spacing: 1px;
@@ -66,7 +73,6 @@ body {
 
 .photo-credit {
     position: absolute;
-    z-index: 1;
     bottom: 16px;
     left: 0;
     right: 0;
@@ -91,10 +97,13 @@ body {
 }
 
 .form-intro p {
-    font-size: 1.2rem;
-    color: #4b5563;
-    max-width: 460px;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    max-width: 700px;
+    font-weight: bold;
+}
+
+.form-intro p:last-child {
+    margin-top: 25px;
 }
 
 .form-card {
@@ -103,13 +112,13 @@ body {
     padding: 40px 44px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     width: 100%;
-    max-width: 560px;
+    max-width: 700px;
 }
 
 .form-card h2 {
     font-size: 1.6rem;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 20px;
     color: #111827;
 }
 
@@ -163,9 +172,8 @@ input[type='password']:not(:placeholder-shown):invalid {
 
 .btn-create {
     display: block;
-    width: 100%;
-    padding: 14px;
-    background-color: #596D48;
+    padding: 16px 50px;
+    background-color: #332a19;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -178,7 +186,7 @@ input[type='password']:not(:placeholder-shown):invalid {
 }
 
 .btn-create:hover {
-    background-color: #4a5c3b;
+    background-color: #5b4422;
 }
 
 .btn-create:active {
@@ -186,6 +194,5 @@ input[type='password']:not(:placeholder-shown):invalid {
 }
 
 .signin-prompt {
-    font-size: 0.9rem;
-    color: #6b7280;
+    font-size: 1.2rem;
 }
