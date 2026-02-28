@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Norse-Bold;
-    src: url(/fonts/Norse-Bold.otf);
+    font-family: "Norse-Bold";
+    src: url('./fonts/Norse-Bold.otf');
 }
 
 *,
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .logo-text {
-    font-family: Norse-Bold;
+    font-family: "Norse-Bold";
     font-size: 5.5rem;
     font-weight: 800;
     color: #ffffff;
