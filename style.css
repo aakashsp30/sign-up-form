@@ -38,11 +38,6 @@ a:hover {
     background-image: url('./assets/kevin-charit-Fndo2egrfdI-unsplash.jpg');
     background-size: cover;
     background-position: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .logo-block {
@@ -63,12 +58,11 @@ a:hover {
 }
 
 .logo-text {
-    font-family: "Norse-Bold";
+    font-family: "Norse-Bold", serif;
     font-size: 5.5rem;
     font-weight: 800;
     color: #ffffff;
     letter-spacing: 1px;
-    line-height: 1.1;
 }
 
 .photo-credit {
@@ -87,7 +81,6 @@ a:hover {
 }
 
 .form-section {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,7 +164,6 @@ input[type='password']:not(:placeholder-shown):invalid {
 }
 
 .btn-create {
-    display: block;
     padding: 16px 50px;
     background-color: #332a19;
     color: #ffffff;
